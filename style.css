@@ -137,6 +137,11 @@ body, .page
         width: 100%;
         background-color: lightblue;
     }
+
+    #tierListContent{
+        width: 15%;
+    }
+
     
     .pic
     {
