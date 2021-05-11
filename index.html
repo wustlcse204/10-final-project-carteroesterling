@@ -1,23 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Final Project</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <div class="navbar">
-            <a href="#">Home</a>
-        </div>
-        <div class="content">
-            <div id="input">
-                <input id="search" type="text" placeholder="Enter Name of Movie Here">
-            </div>
-            <div id="container"></div>
-            <div id="watchlist">
-                <p id="watchlistTitle"></p>
-                <ul id="list"></ul>
-            </div>
-        </div>
-    </body>
+<!doctype html>
+<html lang='en' class="page">
+
+<head>
+    <title>Assignment 10 - Final Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!--Got from Bootstrap Documentation-->
+    <meta charset="utf-8" >
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <img id="logo" src="TMDB.png" alt="Logo" width="427" height="56">
+        <span id="header"><strong> MOVIE TIERLIST MAKER</strong></span>
+    </div>
+    <div id="content">
+        <div id="bar"><input id="search" type="text" placeholder="Enter Name of Any Movie"></div>
+        <div id="tierListContent"><h1 id="tierListTitle">Tier List</h1><ul id="tierList" class="list-group"></ul></div>
+        <div id="container"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", load);
+        search = document.getElementById("search");
+        search.addEventListener("change", lookUp, false);
+    </script>
+</body>
+
 </html>
